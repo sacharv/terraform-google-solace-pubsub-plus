@@ -6,23 +6,18 @@
 # VARS
 if [ "${type}" == "standard" ]; then
   # standard
-  URL="http://repo.grass.corp/solace/standard/PUBSUB_DOCKER_STAND"
-  MD5SUM="http://repo.grass.corp/solace/standard/PUBSUB_DOCKER_STAND_MD5"
+  URL="https://products.solace.com/download/PUBSUB_DOCKER_STAND"
+  MD5SUM="https://products.solace.com/download/PUBSUB_DOCKER_STAND_MD5"
 elif [ "${type}" == "enterprise" ]; then
   # enterprise
-  URL="http://repo.grass.corp/solace/ent/PUBSUB_DOCKER_EVAL"
-  MD5SUM="http://repo.grass.corp/solace/ent/PUBSUB_DOCKER_EVAL_MD5"
+  URL="https://products.solace.com/download/PUBSUB_DOCKER_EVAL"
+  MD5SUM="https://products.solace.com/download/PUBSUB_DOCKER_EVAL_MD5"
 else
-  URL="http://repo.grass.corp/solace/standard/PUBSUB_DOCKER_STAND"
-  MD5SUM="http://repo.grass.corp/solace/standard/PUBSUB_DOCKER_STAND_MD5"
+  URL="https://products.solace.com/download/PUBSUB_DOCKER_STAND"
+  MD5SUM="https://products.solace.com/download/PUBSUB_DOCKER_STAND_MD5"
 fi
 
-# install puppet
-
-
 # VARS related to solace
-HOSTNAME=`hostname -f`
-DNSDOMAIN=`dnsdomainname`
 USERNAME=admin
 PASSWORD=${router_password}
 LOG_FILE=install.log
